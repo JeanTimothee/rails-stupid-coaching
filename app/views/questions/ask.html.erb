@@ -1,4 +1,5 @@
 <form action="/answer" method='post'>
-  <input type="text" name="input" placeholder="Type your question!!">
+  <input type="text" name="question" placeholder="Type your question!!">
   <input type="submit" value="Ask">
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
 </form>
